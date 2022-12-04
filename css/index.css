@@ -25,7 +25,10 @@
   --color-yellow-50: #FFE178;
   --color-yellow-90: #FFEFB7;
 
+  /* Theme styles */
   --background-color: var(--color-pink-20);
+  --deco-heading-color: var(--color-red-20);
+  --heading-color: var(--color-forest-20);
   --text-color: var(--color-forest-20);
   --text-color-link: var(--color-blue-20);
   --text-color-link-visited: var(--color-forest-20);
@@ -34,6 +37,8 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: var(--color-forest-20:);
+    --deco-heading-color: var(--color-pink-50);
+    --heading-color: var(--color-pink-50);
     --text-color: var(--color-pink-20);
     --text-color-link: var(--color-cyan-20);
     --text-color-link-visited: var(--color-pink-20);
@@ -268,7 +273,7 @@ a[href].direct-link:focus:visited,
 /* ******* TYPE ******* */
 
 h1, h2, h3, h4, h5 {
-  color: var(--color-forest-20);
+  color: var(--background-color);
 }
 
 h1 {
@@ -283,5 +288,15 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
+  line-height: 135%;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 135%;
+}
+
+h5 {
+  font-size: 1rem;
   line-height: 135%;
 }
