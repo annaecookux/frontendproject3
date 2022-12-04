@@ -93,17 +93,42 @@ body {
   background-color: var(--background-color);
 }
 
-p:last-child {
-  margin-bottom: 0;
+h1 {
+  font-size: 4.5rem;
+  line-height: 125%;
 }
-p,
-.tmpl-post li,
-img {
-  max-width: 37.5em; /* 600px /16 */
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 135%;
 }
-p,
-.tmpl-post li {
-  line-height: 1.45;
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 135%;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 135%;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 135%;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 125%;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border-radius: 1.75rem;
+  padding: 1rem 1.25rem 0.85rem;
+  border: none;
+  color: var(--button-text-color);
 }
 
 a[href] {
@@ -123,10 +148,6 @@ a[href]:hover {
 
 a[href]:active {
   color: var(--text-color-link-active);
-}
-
-a[href]:visited {
-  color: var(--text-color-link-visited);
 }
 
 main {
@@ -177,6 +198,19 @@ pre {
 }
 code {
   word-break: break-all;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+p,
+.tmpl-post li,
+img {
+  max-width: 37.5em; /* 600px /16 */
+}
+p,
+.tmpl-post li {
+  line-height: 1.45;
 }
 
 /* Header */
@@ -319,48 +353,9 @@ a[href].direct-link:focus:visited,
 }
 
 
-/* ******* TYPE ******* */
 
 h1, h2, h3, h4, h5 {
   color: var(--heading-color);
-}
-
-h1 {
-  font-size: 4.5rem;
-  line-height: 125%;
-}
-
-h2 {
-  font-size: 2.5rem;
-  line-height: 135%;
-}
-
-h3 {
-  font-size: 1.25rem;
-  line-height: 135%;
-  text-transform: uppercase;
-}
-
-h4 {
-  font-size: 1.25rem;
-  line-height: 135%;
-}
-
-h5 {
-  font-size: 1rem;
-  line-height: 135%;
-}
-
-button {
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 125%;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  border-radius: 1.75rem;
-  padding: 1rem 1.25rem 0.85rem;
-  border: none;
-  color: var(--button-text-color);
 }
 
 
