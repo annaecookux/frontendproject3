@@ -330,16 +330,16 @@ h5 {
 }
 
 button {
-  color: var(--color-white);
+  color: var(--button-text-color);
   background-color: var(--primary-button-rest);
 }
 
 button :hover {
-  color: var(--color-white);
+  color: var(--button-text-color);
   background-color: var(--primary-button-hover-focus);
 }
 
 button {
-  color: var(--color-white);
+  color: var(--button-text-color);
   background-color: var(--primary-button-active);
 }
