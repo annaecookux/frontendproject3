@@ -34,6 +34,7 @@
   --text-color-link: var(--color-blue-20);
   --text-color-link-visited: var(--color-forest-20);
 
+  --button-text-color: var(--color-white);
   --primary-button-rest: var(--color-red-20);
   --primary-button-hover-focus: var(--color-red-50);
   --primary-button-active: var(--color-red-90);
@@ -57,6 +58,7 @@
     --text-color-link: var(--color-cyan-90);
     --text-color-link-visited: var(--color-pink-20);
 
+    --button-text-color: var(--color-forest-90);
     --primary-button-rest: var(--color-cyan-90);
     --primary-button-hover-focus: var(--color-cyan-50);
     --primary-button-active: var(--color-cyan-20);
