@@ -21,27 +21,52 @@
   --color-cyan-90: #6DD4E3;
   --color-cyan-50: #98EAF5;
   --color-cyan-20: #C6F8FF;
-  --color-yellow-20: #FCD139;
+  --color-yellow-90: #FCD139;
   --color-yellow-50: #FFE178;
-  --color-yellow-90: #FFEFB7;
+  --color-yellow-20: #FFEFB7;
 
   /* Theme styles */
   --background-color: var(--color-pink-20);
+
   --deco-heading-color: var(--color-red-20);
   --heading-color: var(--color-forest-20);
   --text-color: var(--color-forest-20);
   --text-color-link: var(--color-blue-20);
   --text-color-link-visited: var(--color-forest-20);
+
+  --primary-button-rest: var(--color-red-20);
+  --primary-button-hover-focus: var(--color-red-50);
+  --primary-button-active: var(--color-red-90);
+
+  --secondary-button-rest: var(--color-blue-20);
+  --secondary-button-hover-focus: var(--color-blue-50);
+  --secondary-button-active: var(--color-blue-90);
+
+  --focus-primary: var(--color-blue-20);
+  --focus-secondary: var(--color-red-20);
+
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: var(--color-forest-20);
+
     --deco-heading-color: var(--color-pink-50);
     --heading-color: var(--color-pink-50);
     --text-color: var(--color-pink-20);
     --text-color-link: var(--color-cyan-90);
     --text-color-link-visited: var(--color-pink-20);
+
+    --primary-button-rest: var(--color-cyan-90);
+    --primary-button-hover-focus: var(--color-cyan-50);
+    --primary-button-active: var(--color-cyan-20);
+
+    --secondary-button-rest: var(--color-yellow-90);
+    --secondary-button-hover-focus: var(--color-yellow-50);
+    --secondary-button-active: var(--color-yellow-20);
+
+    --focus-primary: var(--color-yellow-90);
+    --focus-secondary: var(--color-cyan-90);
   }
 }
 
@@ -289,6 +314,7 @@ h2 {
 h3 {
   font-size: 1.25rem;
   line-height: 135%;
+  text-transform: uppercase;
 }
 
 h4 {
@@ -299,4 +325,16 @@ h4 {
 h5 {
   font-size: 1rem;
   line-height: 135%;
+}
+
+button {
+  color: var(--primary-button-rest);
+}
+
+button :hover {
+  color: var(--primary-button-hover-focus);
+}
+
+button {
+  color: var(--primary-button-active);
 }
