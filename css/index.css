@@ -31,8 +31,11 @@
   --deco-heading-color: var(--color-red-20);
   --heading-color: var(--color-forest-20);
   --text-color: var(--color-forest-20);
-  --text-color-link: var(--color-blue-20);
-  --text-color-link-visited: var(--color-forest-20);
+
+  --text-color-link-rest: var(--color-blue-20);
+  --text-color-link-hover-focus: var(--color-blue-50);
+  --text-color-link-active: var(--color-blue-90);
+  --text-color-link-visited: var(--color-blue-20);
 
   --button-text-color: var(--color-white);
   --primary-button-rest: var(--color-red-20);
@@ -55,8 +58,11 @@
     --deco-heading-color: var(--color-pink-50);
     --heading-color: var(--color-pink-50);
     --text-color: var(--color-pink-20);
-    --text-color-link: var(--color-cyan-90);
-    --text-color-link-visited: var(--color-pink-20);
+
+    --text-color-link-rest: var(--color-cyan-90);
+    --text-color-link-hover-focus: var(--color-cyan-50);
+    --text-color-link-active: var(--color-cyan-20);
+    --text-color-link-visited: var(--color-cyan-90);
 
     --button-text-color: var(--color-forest-90);
     --primary-button-rest: var(--color-cyan-90);
@@ -103,6 +109,22 @@ p,
 a[href] {
   color: var(--text-color-link);
 }
+
+a[href]:focus {
+  color: var(--text-color-link-hover-focus);
+  outline-color: var(--focus-primary);
+  outline: .125rem dashed;
+  outline-offset: .063rem;
+}
+
+a[href]:hover {
+  color: var(--text-color-link-hover-focus);
+}
+
+a[href]:active {
+  color: var(--text-color-link-active);
+}
+
 a[href]:visited {
   color: var(--text-color-link-visited);
 }
@@ -341,27 +363,24 @@ button {
   color: var(--button-text-color);
 }
 
+
 /* ******* CLASSES ******* */
 
 .button-primary {
   background-color: var(--primary-button-rest);
 }
 
-.button-primary a:hover {
+.button-primary :hover {
   background-color: var(--primary-button-hover-focus);
 }
 
-.button-primary a:focus {
+.button-primary :focus {
   background-color: var(--primary-button-hover-focus);
   outline-color: var(--focus-primary);
   outline: .125rem dashed;
   outline-offset: .063rem;
 }
 
-.button-primary a:active {
+.button-primary :active {
   background-color: var(--primary-button-active);
-}
-
-.button-secondary {
-  background-color: var(--secondary-button-rest);
 }
