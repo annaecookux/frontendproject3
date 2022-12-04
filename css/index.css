@@ -36,7 +36,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: var(--color-forest-20:);
+    --background-color: var(--color-forest-20);
     --deco-heading-color: var(--color-pink-50);
     --heading-color: var(--color-pink-50);
     --text-color: var(--color-pink-20);
