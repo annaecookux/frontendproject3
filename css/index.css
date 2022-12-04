@@ -6,8 +6,8 @@
 
 /* Theme colors */
 :root {
-  --color-white: #e0e0e0;
-  --color-pink-20: #e0e0e0;
+  --color-white: #FFFFFF;
+  --color-pink-20: #FAEAEA;
   --color-pink-50: #FFCBCD;
   --color-forest-20: #004445;
   --color-forest-50: #003031;
@@ -57,7 +57,7 @@ body {
   margin: 0;
   font-family: var(--font-family);
   color: var(--text-color);
-  background-color: var(--color-pink-20);
+  background-color: var(--background-color);
 }
 
 p:last-child {
