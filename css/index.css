@@ -6,15 +6,34 @@
 
 /* Theme colors */
 :root {
+  --color-white: #e0e0e0;
+  --color-pink-20: #e0e0e0;
+  --color-pink-50: #FFCBCD;
+  --color-forest-20: #004445;
+  --color-forest-50: #003031;
+  --color-forest-90: #171717;
+  --color-red-20: #D51034;
+  --color-red-50: #B3122F;
+  --color-red-90: #790B1F;
+  --color-blue-20: #1D61CD;
+  --color-blue-50: #194996;
+  --color-blue-90: #0A2755;
+  --color-cyan-20: #6DD4E3;
+  --color-cyan-50: #98EAF5;
+  --color-cyan-90: #C6F8FF;
+  --color-yellow-20: #FCD139;
+  --color-yellow-50: #FFE178;
+  --color-yellow-90: #FFEFB7;
+
   --color-gray-20: #e0e0e0;
   --color-gray-50: #C0C0C0;
   --color-gray-90: #004445;
 
-  --background-color: #FAEAEA;
+  --background-color: var(--color-pink-20);
 
   --text-color: var(--color-gray-90);
   --text-color-link: #1D61CD;
-  --text-color-link-visited: #0A2755;
+  --text-color-link-visited: #004445;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,7 +44,7 @@
 
     /* --text-color is assigned to --color-gray-_ above */
     --text-color-link: #6DD4E3;
-    --text-color-link-visited: #C6F8FF;
+    --text-color-link-visited: #FAEAEA;
 
     --background-color: #004445;
   }
