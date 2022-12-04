@@ -328,13 +328,16 @@ h5 {
 }
 
 button {
-  color: var(--primary-button-rest);
+  color: var(--color-white);
+  background-color: var(--primary-button-rest);
 }
 
 button :hover {
-  color: var(--primary-button-hover-focus);
+  color: var(--color-white);
+  background-color: var(--primary-button-hover-focus);
 }
 
 button {
-  color: var(--primary-button-active);
+  color: var(--color-white);
+  background-color: var(--primary-button-active);
 }
