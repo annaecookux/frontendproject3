@@ -353,7 +353,8 @@ button {
 
 .button-primary a:focus {
   background-color: var(--primary-button-hover-focus);
-  outline: .125rem dashed var(--focus-primary);
+  outline-color: var(--focus-primary);
+  outline: .125rem dashed;
   outline-offset: .063rem;
 }
 
