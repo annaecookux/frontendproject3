@@ -1,10 +1,10 @@
 {
-  "title": "Your Blog Name",
-  "url": "https://example.com/",
+  "title": "Anna E. Cook",
+  "url": "https://annaecook.com/",
   "language": "en",
-  "description": "I am writing about my experiences as a naval navel-gazer.",
+  "description": "Regular tips, tools, and updates about accessibility and inclusive design.",
   "feed": {
-    "subtitle": "I am writing about my experiences as a naval navel-gazer.",
+    "subtitle": "Regular tips, tools, and updates about accessibility and inclusive design",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
     "id": "https://example.com/"
@@ -14,8 +14,8 @@
     "url": "https://example.com/feed/feed.json"
   },
   "author": {
-    "name": "Your Name Here",
-    "email": "youremailaddress@example.com",
+    "name": "Anna E. Cook",
+    "email": "anna.elizabeth.cook@gmail.com",
     "url": "https://example.com/about-me/"
   }
 }
