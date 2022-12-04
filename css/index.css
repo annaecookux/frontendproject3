@@ -57,7 +57,7 @@ body {
   margin: 0;
   font-family: var(--font-family);
   color: var(--text-color);
-  background-color: var(--background-color);
+  background-color: var(--color-pink-20);
 }
 
 p:last-child {
