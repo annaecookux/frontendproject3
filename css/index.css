@@ -107,7 +107,7 @@ p,
 }
 
 a[href] {
-  color: var(--text-color-link);
+  color: var(--text-color-link-rest);
 }
 
 a[href]:focus {
