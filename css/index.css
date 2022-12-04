@@ -33,15 +33,10 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-gray-20: #e0e0e0;
-    --color-gray-50: #C0C0C0;
-    --color-forest-20: #FAEAEA;
-
-    /* --text-color is assigned to --color-gray-_ above */
-    --text-color-link: #6DD4E3;
-    --text-color-link-visited: #FAEAEA;
-
-    --background-color: #004445;
+    --background-color: var(--color-forest-20:);
+    --text-color: var(--color-pink-20);
+    --text-color-link: var(--color-cyan-20);
+    --text-color-link-visited: var(--color-pink-20);
   }
 }
 
@@ -87,7 +82,7 @@ main :first-child {
   margin-top: 0;
 }
 header {
-  border-bottom: 1px dashed var(--color-gray-20);
+  border-bottom: 1px dashed var(--color-forest-20);
 }
 header:after {
   content: "";
@@ -226,7 +221,7 @@ a[href].post-tag:visited {
 }
 a[href].post-tag:hover,
 a[href].post-tag:focus {
-  background-color: var(--color-gray-20);
+  background-color: var(--color-forest-20);
 }
 .postlist-item > .post-tag {
   align-self: center;
@@ -244,7 +239,7 @@ a[href].post-tag:focus {
 
 .infobox {
   background-color: var(--color-infobox);
-  color: var(--color-forest-20);
+  color: var(--color-pink-50);
   padding: 1em 0.625em; /* 16px 10px /16 */
 }
 .infobox ol:only-child {
@@ -267,4 +262,26 @@ a[href].direct-link:focus:visited,
 :hover > a[href].direct-link,
 :hover > a[href].direct-link:visited {
   color: #aaa;
+}
+
+
+/* ******* TYPE ******* */
+
+h1, h2, h3, h4, h5 {
+  color: var(--color-forest-20);
+}
+
+h1 {
+  font-size: 4.5rem;
+  line-height: 125%;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 135%;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 135%;
 }
