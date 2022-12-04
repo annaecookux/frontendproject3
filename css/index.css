@@ -25,13 +25,9 @@
   --color-yellow-50: #FFE178;
   --color-yellow-90: #FFEFB7;
 
-  --color-gray-20: #e0e0e0;
-  --color-gray-50: #C0C0C0;
-  --color-gray-90: #004445;
-
   --background-color: var(--color-pink-20);
 
-  --text-color: var(--color-gray-90);
+  --text-color: var(--color-forest-20);
   --text-color-link: #1D61CD;
   --text-color-link-visited: #004445;
 }
@@ -40,7 +36,7 @@
   :root {
     --color-gray-20: #e0e0e0;
     --color-gray-50: #C0C0C0;
-    --color-gray-90: #FAEAEA;
+    --color-forest-20: #FAEAEA;
 
     /* --text-color is assigned to --color-gray-_ above */
     --text-color-link: #6DD4E3;
@@ -187,7 +183,7 @@ code {
 .postlist-date,
 .postlist-item:before {
   font-size: 0.8125em; /* 13px /16 */
-  color: var(--color-gray-90);
+  color: var(--color-forest-20);
 }
 .postlist-date {
   word-spacing: -0.5px;
@@ -219,7 +215,7 @@ code {
   margin-left: 0.6666666666667em; /* 8px /12 */
   margin-top: 0.5em; /* 6px /12 */
   margin-bottom: 0.5em; /* 6px /12 */
-  color: var(--color-gray-90);
+  color: var(--color-forest-20);
   border: 1px solid var(--color-gray-50);
   border-radius: 0.25em; /* 3px /12 */
   text-decoration: none;
@@ -249,7 +245,7 @@ a[href].post-tag:focus {
 
 .infobox {
   background-color: var(--color-infobox);
-  color: var(--color-gray-90);
+  color: var(--color-forest-20);
   padding: 1em 0.625em; /* 16px 10px /16 */
 }
 .infobox ol:only-child {
