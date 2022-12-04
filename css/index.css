@@ -336,7 +336,31 @@ button {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   border-radius: 1.75rem;
-  padding: 1rem 1.25rem 0.75rem;
+  padding: 1rem 1.25rem 0.85rem;
+  border: none;
   color: var(--button-text-color);
+}
+
+/* ******* CLASSES ******* */
+
+.button-primary {
   background-color: var(--primary-button-rest);
+}
+
+.button-primary a:hover {
+  background-color: var(--primary-button-hover-focus);
+}
+
+.button-primary a:focus {
+  background-color: var(--primary-button-hover-focus);
+  outline: .125rem dashed var(--focus-primary);
+  outline-offset: .063rem;
+}
+
+.button-primary a:active {
+  background-color: var(--primary-button-active);
+}
+
+.button-secondary {
+  background-color: var(--secondary-button-rest);
 }
