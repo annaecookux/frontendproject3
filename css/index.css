@@ -26,10 +26,9 @@
   --color-yellow-90: #FFEFB7;
 
   --background-color: var(--color-pink-20);
-
   --text-color: var(--color-forest-20);
-  --text-color-link: #1D61CD;
-  --text-color-link-visited: #004445;
+  --text-color-link: var(--color-blue-20);
+  --text-color-link-visited: var(--color-forest-20);
 }
 
 @media (prefers-color-scheme: dark) {
