@@ -136,6 +136,11 @@ body {
   background-color: var(--background-color);
 }
 
+h1, h2, h3, h4, h5 {
+  color: var(--heading-color);
+}
+
+
 h1 {
   font-family: Recoleta;
   font-weight: 400;
@@ -150,19 +155,6 @@ h2 {
   line-height: 135%;
 }
 
-h3 .upperCase {
-  font-family: SofiaProSemiBold;
-  font-size: 1.25rem;
-  line-height: 135%;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-}
-
-h3 .sentenceCase {
-  font-family: SofiaProSemiBold;
-  font-size: 1.25rem;
-  line-height: 135%;
-}
 
 h4 {
   font-family: SofiaProSemiBold;
@@ -253,18 +245,6 @@ pre {
   padding: 1em;
   margin: .5em 0;
   background-color: #f6f6f6;
-}
-
-p .large {
-  font-family: SofiaProRegular;
-  font-size: 1.5rem;
-  line-height: 166%;
-}
-
-p .normal {
-  font-family: SofiaProRegular;
-  font-size: 1.125rem;
-  line-height: 166%;
 }
 
 b {
@@ -436,29 +416,51 @@ a[href].direct-link:focus:visited,
 }
 
 
+/* CLASSES */
+  /* Button Classes*/
+  .button-primary {
+    background-color: var(--primary-button-rest);
+  }
 
-h1, h2, h3, h4, h5 {
-  color: var(--heading-color);
-}
+  .button-primary :hover {
+    background-color: var(--primary-button-hover-focus);
+  }
 
+  .button-primary :focus {
+    background-color: var(--primary-button-hover-focus);
+    outline-color: var(--focus-primary);
+    outline: .125rem dashed;
+    outline-offset: .063rem;
+  }
 
-/* ******* CLASSES ******* */
+  .button-primary :active {
+    background-color: var(--primary-button-active);
+  }
 
-.button-primary {
-  background-color: var(--primary-button-rest);
-}
+  /* H3 Classes*/
+  .sentenceCase {
+    font-family: SofiaProSemiBold;
+    font-size: 1.25rem;
+    line-height: 135%;
+  }
 
-.button-primary :hover {
-  background-color: var(--primary-button-hover-focus);
-}
+  .upperCase {
+    font-family: SofiaProSemiBold;
+    font-size: 1.25rem;
+    line-height: 135%;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+  }
 
-.button-primary :focus {
-  background-color: var(--primary-button-hover-focus);
-  outline-color: var(--focus-primary);
-  outline: .125rem dashed;
-  outline-offset: .063rem;
-}
+  /* P Classes*/
+  .large {
+    font-family: SofiaProRegular;
+    font-size: 1.5rem;
+    line-height: 166%;
+  }
 
-.button-primary :active {
-  background-color: var(--primary-button-active);
-}
+  .normal {
+    font-family: SofiaProRegular;
+    font-size: 1.125rem;
+    line-height: 166%;
+  }
