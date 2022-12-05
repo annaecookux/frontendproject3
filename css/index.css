@@ -450,11 +450,32 @@ a[href].direct-link:focus:visited,
     background-color: var(--primary-button-active);
   }
 
+  .button-secondary {
+    background-color: var(--secondary-button-rest);
+  }
+
+  .button-secondary :hover {
+    background-color: var(--secondary-button-hover-focus);
+  }
+
+  .button-secondary :focus {
+    background-color: var(--secondary-button-hover-focus);
+    outline-color: var(--focus-primary);
+    outline: .125rem dashed;
+    outline-offset: .063rem;
+  }
+
+  .button-secondary :active {
+    background-color: var(--secondary-button-active);
+  }
+
+
   /* H3 Classes*/
   .sentenceCase {
     font-family: SofiaProSemiBold;
     font-size: 1.25rem;
     line-height: 135%;
+    text-transform: none;
   }
 
   /* P Classes*/
