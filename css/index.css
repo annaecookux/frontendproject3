@@ -80,12 +80,25 @@
 
 /* Load in Typefaces */
 @font-face {
-  font-display: fallback;
   font-family: "Recoleta";
+  font-display: fallback;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 400;
   src: url('/assets/fonts/Recoleta-Regular.otf') format('otf');
 }
+
+@font-face {
+  font-family: "Sofia-Pro";
+  font-display: fallback;
+  font-style: normal, italic, bold;
+  font-weight: 400, 600;
+  src: url('/assets/fonts/SofiaPro-Regular.otf') format('otf');
+  src: url('/assets/fonts/SofiaPro-Regularitalic.otf') format('otf');
+  src: url('/assets/fonts/SofiaPro-SemiBold.otf') format('otf');
+  src: url('/assets/fonts/SofiaPro-SemiBolditalic.otf') format('otf');
+
+}
+
 
 /* Global stylesheet */
 * {
@@ -102,12 +115,15 @@ body {
 }
 
 h1 {
+  font-family: Recoleta;
+  font-weight: 400;
   font-size: 4.5rem;
   line-height: 125%;
-  font-family: Recoleta;
 }
 
 h2 {
+  font-family: Sofia-Pro;
+  font-weight: 400;
   font-size: 2.5rem;
   line-height: 135%;
 }
