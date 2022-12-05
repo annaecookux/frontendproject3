@@ -155,6 +155,13 @@ h2 {
   line-height: 135%;
 }
 
+h3 {
+  font-family: SofiaProSemiBold;
+  font-size: 1.25rem;
+  line-height: 135%;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
 
 h4 {
   font-family: SofiaProSemiBold;
@@ -166,6 +173,12 @@ h5 {
   font-family: SofiaProRegular;
   font-size: 1rem;
   line-height: 135%;
+}
+
+p {
+  font-family: SofiaProRegular;
+  font-size: 1.125rem;
+  line-height: 166%;
 }
 
 button {
@@ -444,14 +457,6 @@ a[href].direct-link:focus:visited,
     line-height: 135%;
   }
 
-  .upperCase {
-    font-family: SofiaProSemiBold;
-    font-size: 1.25rem;
-    line-height: 135%;
-    text-transform: uppercase;
-    letter-spacing: 0.15em;
-  }
-
   /* P Classes*/
   .large {
     font-family: SofiaProRegular;
@@ -459,8 +464,3 @@ a[href].direct-link:focus:visited,
     line-height: 166%;
   }
 
-  .normal {
-    font-family: SofiaProRegular;
-    font-size: 1.125rem;
-    line-height: 166%;
-  }
