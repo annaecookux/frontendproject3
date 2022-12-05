@@ -151,22 +151,26 @@ h2 {
 }
 
 h3 {
+  font-family: SofiaProSemiBold;
   font-size: 1.25rem;
   line-height: 135%;
   text-transform: uppercase;
 }
 
 h4 {
+  font-family: SofiaProSemiBold;
   font-size: 1.25rem;
   line-height: 135%;
 }
 
 h5 {
+  font-family: SofiaProRegular;
   font-size: 1rem;
   line-height: 135%;
 }
 
 button {
+  font-family: SofiaProSemiBold;
   font-size: 1rem;
   font-weight: 600;
   line-height: 125%;
