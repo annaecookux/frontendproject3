@@ -150,11 +150,18 @@ h2 {
   line-height: 135%;
 }
 
-h3 {
+h3 .upperCase {
   font-family: SofiaProSemiBold;
   font-size: 1.25rem;
   line-height: 135%;
   text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+
+h3 .sentenceCase {
+  font-family: SofiaProSemiBold;
+  font-size: 1.25rem;
+  line-height: 135%;
 }
 
 h4 {
@@ -247,6 +254,31 @@ pre {
   margin: .5em 0;
   background-color: #f6f6f6;
 }
+
+p .large {
+  font-family: SofiaProRegular;
+  font-size: 1.5rem;
+  line-height: 166%;
+}
+
+p .normal {
+  font-family: SofiaProRegular;
+  font-size: 1.125rem;
+  line-height: 166%;
+}
+
+b {
+  font-family: SofiaProSemiBold;
+}
+
+i {
+  font-family: SofiaProRegularItalic;
+}
+
+b + i {
+  font-family: SofiaProSemiBoldItalic;
+}
+
 code {
   word-break: break-all;
 }
