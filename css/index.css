@@ -25,7 +25,9 @@
   --color-yellow-50: #FFE178;
   --color-yellow-20: #FFEFB7;
 
-  /* Theme styles */
+  /* Theme typescale */
+
+  /* Theme states */
   --background-color: var(--color-pink-20);
 
   --deco-heading-color: var(--color-red-20);
@@ -340,8 +342,10 @@ p,
 }
 .postlist-date,
 .postlist-item:before {
-  font-size: 0.8125em; /* 13px /16 */
-  color: var(--color-forest-20);
+  font-family: SofiaProRegular;
+  font-size: 1rem;
+  line-height: 166%;
+  color: var(--text-color);
 }
 .postlist-date {
   word-spacing: -0.5px;
