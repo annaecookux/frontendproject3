@@ -318,14 +318,14 @@ p,
 .nav-item a[href] {
   text-decoration: none;
   font-family: SofiaProRegular;
-  font-size: 1rem;
+  font-size: 1.125rem;
   line-height: 166%;
   color: var(--text-color-20);
 }
 
 .nav-item a[href]:focus {
   text-decoration: underline;
-  color: var(--primary-button-rest);
+  color: var(--secondary-button-rest);
   outline-color: var(--focus-primary);
   outline: .125rem dashed;
   outline-offset: .063rem;
@@ -333,18 +333,12 @@ p,
 
 .nav-item a[href]:hover {
   text-decoration: underline;
-  color: var(--primary-button-rest);
-}
-
-.nav-item a[href]:active {
-  text-decoration: underline;
-  color: var(--text-color-link-active);
-  color: var(--text-color-50);
+  color: var(--secondary-button-rest);
 }
 
 .nav-item-active {
-  font-weight: 700;
   text-decoration: underline;
+  color: var(--text-color-50);
 }
 
 /* Posts list */
@@ -392,7 +386,7 @@ p,
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  padding: .5em .5em .25em .5em;
+  padding: .5em .75em .25em .75em;
   margin-left: 0.6666666666667em; /* 8px /12 */
   margin-top: 0.5em; /* 6px /12 */
   margin-bottom: 0.5em; /* 6px /12 */
