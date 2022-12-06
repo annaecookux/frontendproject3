@@ -386,7 +386,7 @@ p,
 }
 a[href].post-tag,
 a[href].post-tag:visited {
-  color: inherit;
+  color: var(--primary-button-rest);
 }
 a[href].post-tag:hover {
   background-color: var(--primary-button-rest);
@@ -397,7 +397,6 @@ a[href].post-tag:hover {
 a[href].post-tag:focus {
   background-color: var(--primary-button-rest);
   color: var(--button-text-color);
-  outline-color: var(--focus-primary);
   outline: .125rem dashed;
   outline-offset: .063rem;
 }
