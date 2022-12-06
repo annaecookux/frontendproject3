@@ -32,7 +32,8 @@
 
   --deco-heading-color: var(--color-red-20);
   --heading-color: var(--color-forest-20);
-  --text-color: var(--color-forest-20);
+  --text-color-20: var(--color-forest-20);
+  --text-color-50: var(--color-forest-90);
 
   --text-color-link-rest: var(--color-blue-20);
   --text-color-link-hover-focus: var(--color-blue-50);
@@ -59,7 +60,8 @@
 
     --deco-heading-color: var(--color-pink-50);
     --heading-color: var(--color-pink-50);
-    --text-color: var(--color-pink-20);
+    --text-color-20: var(--color-pink-20);
+    --text-color-50: var(--color-pink-50);
 
     --text-color-link-rest: var(--color-cyan-90);
     --text-color-link-hover-focus: var(--color-cyan-50);
@@ -134,7 +136,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: var(--font-family);
-  color: var(--text-color);
+  color: var(--text-color-20);
   background-color: var(--background-color);
 }
 
@@ -345,7 +347,7 @@ p,
   font-family: SofiaProRegular;
   font-size: 1rem;
   line-height: 166%;
-  color: var(--text-color);
+  color: var(--text-color-20);
 }
 .postlist-date {
   word-spacing: -0.5px;
@@ -377,7 +379,7 @@ p,
   margin-left: 0.6666666666667em; /* 8px /12 */
   margin-top: 0.5em; /* 6px /12 */
   margin-bottom: 0.5em; /* 6px /12 */
-  color: var(--text-color);
+  color: var(--text-color-20);
   border: 1px solid var(--primary-button-rest);
   border-radius: 0.25em; /* 3px /12 */
   text-decoration: none;
@@ -386,24 +388,25 @@ p,
 }
 a[href].post-tag,
 a[href].post-tag:visited {
-  color: var(--primary-button-rest);
+  color: var(--text-color-20);
 }
 a[href].post-tag:hover {
-  background-color: var(--primary-button-rest);
+  background-color: var(--text-color-20);
   color: var(--button-text-color);
   
 }
 
 a[href].post-tag:focus {
-  background-color: var(--primary-button-rest);
+  background-color: var(--text-color-20);
   color: var(--button-text-color);
+  outline-color: var(--focus-primary);
   outline: .125rem dashed;
   outline-offset: .063rem;
 }
 
 a[href].post-tag:active {
   border: 1px solid var(--primary-button-active);
-  background-color: var(--primary-button-active);   
+  background-color: var(--text-color-50);
   color: var(--button-text-color);
 }
 
