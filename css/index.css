@@ -376,13 +376,13 @@ p,
   align-items: center;
   justify-content: center;
   text-transform: uppercase;
-  padding: 0.08333333333333em 0.3333333333333em; /* 1px 4px /12 */
+  padding: .5em .5em .25em .5em;
   margin-left: 0.6666666666667em; /* 8px /12 */
   margin-top: 0.5em; /* 6px /12 */
   margin-bottom: 0.5em; /* 6px /12 */
   color: var(--text-color-20);
-  border: 1px solid var(--primary-button-rest);
-  border-radius: 0.25em; /* 3px /12 */
+  border: 2px solid var(--primary-button-rest);
+  border-radius: 2em;
   text-decoration: none;
   line-height: 1.8;
   
@@ -392,22 +392,19 @@ a[href].post-tag:visited {
   color: var(--text-color-20);
 }
 a[href].post-tag:hover {
-  border: 1px solid var(--primary-button-active);
+  border: 2px solid var(--primary-button-active);
   background-color: var(--primary-button-active);
   color: var(--button-text-color);
 }
 
 a[href].post-tag:focus {
-  border: 1px solid var(--primary-button-active);
+  border: 2px solid var(--primary-button-active);
   background-color: var(--primary-button-active);
   color: var(--button-text-color);
-  outline-color: var(--focus-primary);
-  outline: .125rem dashed;
-  outline-offset: .063rem;
 }
 
 a[href].post-tag:active {
-  border: 1px solid var(--text-color-20);
+  border: 2px solid var(--text-color-20);
   background-color: var(--text-color-20);
   color: var(--button-text-color);
 }
