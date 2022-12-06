@@ -315,9 +315,33 @@ p,
   display: inline-block;
   margin-right: 1em;
 }
-.nav-item a[href]:not(:hover) {
+.nav-item a[href] {
   text-decoration: none;
+  font-family: SofiaProRegular;
+  font-size: 1rem;
+  line-height: 166%;
+  color: var(--text-color-20);
 }
+
+.nav-item a[href]:focus {
+  text-decoration: underline;
+  color: var(--primary-button-rest);
+  outline-color: var(--focus-primary);
+  outline: .125rem dashed;
+  outline-offset: .063rem;
+}
+
+.nav-item a[href]:hover {
+  text-decoration: underline;
+  color: var(--primary-button-rest);
+}
+
+.nav-item a[href]:active {
+  text-decoration: underline;
+  color: var(--text-color-link-active);
+  color: var(--text-color-50);
+}
+
 .nav-item-active {
   font-weight: 700;
   text-decoration: underline;
@@ -335,15 +359,8 @@ p,
   counter-increment: start-from -1;
   line-height: 1.8;
 }
-.postlist-item:before {
-  display: inline-block;
-  pointer-events: none;
-  content: "" counter(start-from, decimal-leading-zero) ". ";
-  line-height: 100%;
-  text-align: right;
-}
-.postlist-date,
-.postlist-item:before {
+
+.postlist-date {
   font-family: SofiaProRegular;
   font-size: 1rem;
   line-height: 166%;
@@ -497,6 +514,7 @@ a[href].direct-link:focus:visited,
   font-size: 1.25rem;
   line-height: 135%;
   text-transform: none;
+  letter-spacing: 0em;
 }
 
 /* Large paragraph */
