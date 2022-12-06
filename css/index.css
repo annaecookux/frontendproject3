@@ -377,20 +377,37 @@ p,
   margin-left: 0.6666666666667em; /* 8px /12 */
   margin-top: 0.5em; /* 6px /12 */
   margin-bottom: 0.5em; /* 6px /12 */
-  color: var(--color-forest-20);
-  border: 1px solid var(--color-gray-50);
+  color: var(--text-color);
+  border: 1px solid var(--primary-button-rest);
   border-radius: 0.25em; /* 3px /12 */
   text-decoration: none;
   line-height: 1.8;
+  
 }
 a[href].post-tag,
 a[href].post-tag:visited {
   color: inherit;
 }
-a[href].post-tag:hover,
-a[href].post-tag:focus {
-  background-color: var(--color-forest-20);
+a[href].post-tag:hover {
+  background-color: var(--primary-button-rest);
+  color: var(--button-text-color);
+  
 }
+
+a[href].post-tag:focus {
+  background-color: var(--primary-button-rest);
+  color: var(--button-text-color);
+  outline-color: var(--focus-primary);
+  outline: .125rem dashed;
+  outline-offset: .063rem;
+}
+
+a[href].post-tag:active {
+  border: 1px solid var(--primary-button-active);
+  background-color: var(--primary-button-active);   
+  color: var(--button-text-color);
+}
+
 .postlist-item > .post-tag {
   align-self: center;
 }
@@ -433,59 +450,58 @@ a[href].direct-link:focus:visited,
 }
 
 
-/* CLASSES */
-  /* Button Classes*/
-  .button-primary {
-    background-color: var(--primary-button-rest);
-  }
+/* Buttons*/
+.button-primary {
+  background-color: var(--primary-button-rest);
+}
 
-  .button-primary :hover {
-    background-color: var(--primary-button-hover-focus);
-  }
+.button-primary :hover {
+  background-color: var(--primary-button-hover-focus);
+}
 
-  .button-primary :focus {
-    background-color: var(--primary-button-hover-focus);
-    outline-color: var(--focus-primary);
-    outline: .125rem dashed;
-    outline-offset: .063rem;
-  }
+.button-primary :focus {
+  background-color: var(--primary-button-hover-focus);
+  outline-color: var(--focus-primary);
+  outline: .125rem dashed;
+  outline-offset: .063rem;
+}
 
-  .button-primary :active {
-    background-color: var(--primary-button-active);
-  }
+.button-primary :active {
+  background-color: var(--primary-button-active);
+}
 
-  .button-secondary {
-    background-color: var(--secondary-button-rest);
-  }
+.button-secondary {
+  background-color: var(--secondary-button-rest);
+}
 
-  .button-secondary :hover {
-    background-color: var(--secondary-button-hover-focus);
-  }
+.button-secondary :hover {
+  background-color: var(--secondary-button-hover-focus);
+}
 
-  .button-secondary :focus {
-    background-color: var(--secondary-button-hover-focus);
-    outline-color: var(--focus-primary);
-    outline: .125rem dashed;
-    outline-offset: .063rem;
-  }
+.button-secondary :focus {
+  background-color: var(--secondary-button-hover-focus);
+  outline-color: var(--focus-primary);
+  outline: .125rem dashed;
+  outline-offset: .063rem;
+}
 
-  .button-secondary :active {
-    background-color: var(--secondary-button-active);
-  }
+.button-secondary :active {
+  background-color: var(--secondary-button-active);
+}
 
 
-  /* H3 Classes*/
-  .sentenceCase {
-    font-family: SofiaProSemiBold;
-    font-size: 1.25rem;
-    line-height: 135%;
-    text-transform: none;
-  }
+/* Sentence case H3 */
+.sentenceCase {
+  font-family: SofiaProSemiBold;
+  font-size: 1.25rem;
+  line-height: 135%;
+  text-transform: none;
+}
 
-  /* P Classes*/
-  .large {
-    font-family: SofiaProRegular;
-    font-size: 1.5rem;
-    line-height: 166%;
-  }
+/* Large paragraph */
+.large {
+  font-family: SofiaProRegular;
+  font-size: 1.5rem;
+  line-height: 166%;
+}
 
