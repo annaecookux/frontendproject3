@@ -328,7 +328,7 @@ p,
   color: var(--secondary-button-rest);
   outline-color: var(--focus-primary);
   outline: .125rem dashed;
-  outline-offset: .063rem;
+  outline-offset: .25rem;
 }
 
 .nav-item a[href]:hover {
