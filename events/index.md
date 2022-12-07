@@ -1,8 +1,8 @@
 ---
 layout: layouts/post.njk
-title: About
+title: Events | Anna E. Cook
 templateClass: tmpl-post
 eleventyNavigation:
-  key: Test
-  order: 4
+  key: Events
+  order: 3
 ---
