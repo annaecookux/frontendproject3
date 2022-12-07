@@ -1,0 +1,14 @@
+---
+layout: layouts/post.njk
+permalink: /writing/
+title: Writing
+templateClass: tmpl-post
+eleventyNavigation:
+  key: About
+  order: 4
+---
+
+<h1>Writing</h1>
+
+{% set postslist = collections.posts %}
+{% include "postslist.njk" %}
