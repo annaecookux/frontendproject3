@@ -295,11 +295,12 @@ p,
 
 /* Header */
 .home {
-  padding: 0 1rem;
-  float: left;
-  margin: 1rem 0; /* 16px /16 */
-  font-size: 1em; /* 16px /16 */
+  width: 2.75rem;
+  height: 2.75rem;
+  height: auto;
+  margin-bottom: -1.5rem;
 }
+
 .home :link:not(:hover) {
   text-decoration: none;
 }
