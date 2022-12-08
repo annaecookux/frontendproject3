@@ -1,6 +1,6 @@
 /* Defaults */
 :root {
-  --font-family: var(--type-sans-serif);
+  --font-family: var(--type-sans-serif), sans-serif;
   --font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 }
 
@@ -24,10 +24,33 @@
   --color-yellow-90: #FCD139;
   --color-yellow-50: #FFE178;
   --color-yellow-20: #FFEFB7;
+  
+  /* Theme scale */
+  --size-extra-large-2: 5em; /* 80px*/
+  --size-extra-large-1: 4.5em; /* 72px*/
 
-  /* Theme type */
-  --type-serif: Recoleta;
-  --type-sans-serif: SofiaProRegular;
+  --size-large-3: 4em; /* 64px*/
+  --size-large-2: 3.75em; /* 60px*/
+  --size-large-1: 3em; /* 48px*/
+
+  --size-medium-3: 2.75em; /* 44px*/
+  --size-medium-2: 2.5em; /* 40px*/
+  --size-medium-1: 2.25em; /* 36px*/
+
+  --size-small-3: 1.5em; /* 24px*/
+  --size-small-2: 1.25em; /* 20px*/
+  --size-small-1: 1.125em; /* 18px*/
+
+  --size-extra-small-2: 1em; /* 16px*/
+  --size-extra-small-1: .75em; /* 12px*/
+  
+
+ /* Theme type */
+    --type-serif: Recoleta;
+    --type-sans-serif: SofiaProRegular;
+    --type-sans-serif-bold: SofiaProRegularItalic;
+    --type-sans-serif-italic: SofiaProRegularBold;
+
 
   /* Theme states */
   --background-color: var(--color-pink-20);
@@ -150,7 +173,7 @@ h1, h2, h3, h4, h5 {
 h1 {
   font-family: Recoleta;
   font-weight: 400;
-  font-size: 4.5rem;
+  font-size: var( --size-extra-large-1);
   line-height: 125%;
 }
 
