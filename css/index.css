@@ -388,7 +388,7 @@ footer {
   flex-flow: column wrap;
   border-top: solid;
   border-width: .12rem;
-  border-color: #687176;
+  border-color: var(--border);
   padding: 1rem 0 1rem 0;
 } 
 
@@ -409,9 +409,10 @@ display: inline;
 footer > ul > li > a {
 display: block;
 line-height: 2em;
-padding: .5rem 2.25rem;
+padding: .5em 2.25em;
 text-decoration: none;
 }
+
 /* Posts list */
 .postlist {
   list-style: none;
@@ -635,7 +636,6 @@ a[href].direct-link:focus:visited,
   background-color: var(--secondary-button-active);
 }
 
-
 /* Sentence case H3 */
 .h3-sentence-case {
   font-weight: 600;
@@ -649,4 +649,9 @@ a[href].direct-link:focus:visited,
 .p-large {
   font-size: var(--size-small-3);
   line-height: var (--size-small-3);
+}
+
+/* Fieldset */
+fieldset {
+  border: 0;
 }
