@@ -51,6 +51,9 @@
     --type-sans-serif-bold: SofiaProRegularItalic;
     --type-sans-serif-italic: SofiaProRegularBold;
 
+    --line-height-heading-large: 125%;
+    --line-height-heading: 135%;
+    --line-height-body: 166%;
 
   /* Theme states */
   --background-color: var(--color-pink-20);
@@ -169,23 +172,20 @@ h1, h2, h3, h4, h5 {
   color: var(--heading-color);
 }
 
-
 h1 {
   font-family: Recoleta;
   font-weight: 400;
-  font-size: var( --size-extra-large-1);
-  line-height: 125%;
+  font-size: var(--size-extra-large-1);
+  line-height: var (--line-height-heading-large);
 }
 
 h2 {
-  font-family: SofiaProRegular;
   font-weight: 400;
-  font-size: 2.5rem;
-  line-height: 135%;
+  font-size: var(--size-medium-2);
+  line-height: var (--line-height-heading-large);
 }
 
 h3 {
-  font-family: SofiaProSemiBold;
   font-size: 1.25rem;
   line-height: 135%;
   text-transform: uppercase;
@@ -193,13 +193,11 @@ h3 {
 }
 
 h4 {
-  font-family: SofiaProSemiBold;
   font-size: 1.25rem;
   line-height: 135%;
 }
 
 h5 {
-  font-family: SofiaProRegular;
   font-size: 1rem;
   line-height: 135%;
 }
