@@ -75,7 +75,7 @@
 
   --focus-primary: var(--color-blue-20);
   --focus-secondary: var(--color-red-20);
-  --border-color: var (--color-pink-50);
+  --border: var(--color-pink-50);
 
 }
 
@@ -105,7 +105,7 @@
 
     --focus-primary: var(--color-yellow-90);
     --focus-secondary: var(--color-cyan-90);
-    --border-color: var (--color-cyan-90);
+    --border: var(--color-cyan-90);
 
   }
 }
@@ -397,7 +397,7 @@ s::after {
   border-top: solid;
   border-bottom: solid;
   border-width: .12rem;
-  border-color: var (--border-color);
+  border-color: var(--border);
   margin-top: -.06rem;
 }
 
