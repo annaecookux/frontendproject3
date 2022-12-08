@@ -41,7 +41,8 @@
   --size-small-2: 1.25em; /* 20px*/
   --size-small-1: 1.125em; /* 18px*/
 
-  --size-extra-small-2: 1em; /* 16px*/
+  --size-extra-small-3: 1em; /* 16px*/
+  --size-extra-small-2: .0.875em; /* 14px*/
   --size-extra-small-1: .75em; /* 12px*/
   
 
@@ -82,6 +83,7 @@
 
 }
 
+/* Dark Mode Theme*/
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: var(--color-forest-20);
@@ -109,6 +111,11 @@
     --focus-secondary: var(--color-cyan-90);
   }
 }
+
+ /* Less than 600px */
+ @media all and (max-width: 600px) {
+  
+ }
 
 /* Typefaces */
 @font-face {
@@ -199,7 +206,7 @@ h4 {
 }
 
 h5 {
-  font-size: var(--size-extra-small-2);
+  font-size: var(--size-extra-small-3);
   line-height: var (--line-height-heading);
 }
 
@@ -209,16 +216,15 @@ p {
 }
 
 button {
-  font-family: SofiaProSemiBold;
-  font-size: 1rem;
+  font-size: var (--size-extra-small-3)
+  line-height: var (--line-height-heading-large);
+  color: var(--button-text-color);
   font-weight: 600;
-  line-height: 125%;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  border-radius: 1.75rem;
-  padding: 1rem 1.25rem 0.85rem;
+  border-radius: 1.75em;
+  padding: 1em 1.25em 0.85em;
   border: none;
-  color: var(--button-text-color);
 }
 
 a[href] {
@@ -228,8 +234,8 @@ a[href] {
 a[href]:focus {
   color: var(--text-color-link-hover-focus);
   outline-color: var(--focus-primary);
-  outline: .125rem dashed;
-  outline-offset: .063rem;
+  outline: .125em dashed;
+  outline-offset: .063em;
 }
 
 a[href]:hover {
@@ -241,7 +247,7 @@ a[href]:active {
 }
 
 main {
-  padding: 1rem;
+  padding: 1em;
 }
 main :first-child {
   margin-top: 0;
@@ -269,7 +275,7 @@ code {
   line-height: 1.5;
 }
 pre {
-  font-size: 14px;
+  font-size: var(--size-extra-small-2);
   line-height: 1.375;
   direction: ltr;
   text-align: left;
@@ -339,7 +345,7 @@ s::after {
 /* Header */
 .home {
   font-family: SofiaProRegular;
-  font-size: 1.125rem;
+  font-size: var(--size-small-1);
 }
 
 .home :link:not(:hover) {
@@ -359,8 +365,7 @@ s::after {
 }
 .nav-item a[href] {
   text-decoration: none;
-  font-family: SofiaProRegular;
-  font-size: 1.125rem;
+  font-size: var(--size-small-1);
   line-height: 166%;
   color: var(--text-color-20);
 }
@@ -369,8 +374,8 @@ s::after {
   text-decoration: underline;
   color: var(--secondary-button-rest);
   outline-color: var(--focus-primary);
-  outline: .125rem dashed;
-  outline-offset: .25rem;
+  outline: .125em dashed;
+  outline-offset: .25em;
 }
 
 .nav-item a[href]:hover {
@@ -392,13 +397,13 @@ s::after {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  counter-increment: start-from -1;
+  counter-incement: start-from -1;
   line-height: 1.8;
 }
 
 .postlist-date {
   font-family: SofiaProRegular;
-  font-size: 1rem;
+  font-size: var(--size-extra-small-3);
   line-height: 166%;
   color: var(--text-color-20);
 }
@@ -516,8 +521,8 @@ a[href].direct-link:focus:visited,
 .button-primary :focus {
   background-color: var(--primary-button-hover-focus);
   outline-color: var(--focus-primary);
-  outline: .125rem dashed;
-  outline-offset: .063rem;
+  outline: .125em dashed;
+  outline-offset: .063em;
 }
 
 .button-primary :active {
@@ -535,8 +540,8 @@ a[href].direct-link:focus:visited,
 .button-secondary :focus {
   background-color: var(--secondary-button-hover-focus);
   outline-color: var(--focus-primary);
-  outline: .125rem dashed;
-  outline-offset: .063rem;
+  outline: .125em dashed;
+  outline-offset: .063em;
 }
 
 .button-secondary :active {
@@ -548,14 +553,13 @@ a[href].direct-link:focus:visited,
   color: var(--button-text-color);
   background-color: var(--primary-button-rest);
   text-decoration: none;
-  font-family: SofiaProSemiBold;
-  font-size: 1rem;
+  font-size: var(--size-extra-small-3);
   font-weight: 600;
   line-height: 125%;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  border-radius: 1.75rem;
-  padding: 1rem 1.25rem 0.85rem;
+  border-radius: 1.75em;
+  padding: 1em 1.25em 0.85em;
   border: none;
 }
 
@@ -566,8 +570,8 @@ a[href].direct-link:focus:visited,
 .button-link-primary :focus {
   background-color: var(--primary-button-hover-focus);
   outline-color: var(--focus-primary);
-  outline: .125rem dashed;
-  outline-offset: .063rem;
+  outline: .125em dashed;
+  outline-offset: .063em;
 }
 
 .button-link-primary :active {
@@ -578,14 +582,13 @@ a[href].direct-link:focus:visited,
   color: var(--button-text-color);
   background-color: var(--secondary-button-rest);
   text-decoration: none;
-  font-family: SofiaProSemiBold;
-  font-size: 1rem;
+  font-size: var(--size-extra-small-3);
   font-weight: 600;
   line-height: 125%;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  border-radius: 1.75rem;
-  padding: 1rem 1.25rem 0.85rem;
+  border-radius: 1.75em;
+  padding: 1em 1.25em 0.85em;
   border: none;
 }
 
@@ -596,8 +599,8 @@ a[href].direct-link:focus:visited,
 .button-link-secondary :focus {
   background-color: var(--secondary-button-hover-focus);
   outline-color: var(--focus-primary);
-  outline: .125rem dashed;
-  outline-offset: .063rem;
+  outline: .125em dashed;
+  outline-offset: .063em;
 }
 
 .button-link-secondary :active {
