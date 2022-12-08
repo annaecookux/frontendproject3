@@ -337,15 +337,6 @@ s::after {
   content: " [end of stricken text] ";
 }
 
-/* Header */
-.home {
-  font-size: var(--size-small-1);
-}
-
-.home :link:not(:hover) {
-  text-decoration: none;
-}
-
 /* Nav */
 .nav {
   padding: 0;
