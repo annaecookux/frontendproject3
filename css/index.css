@@ -619,6 +619,6 @@ a[href].direct-link:focus:visited,
 
 /* Large paragraph */
 .p-large {
-  font-size: var(--size-small-3);
+  font-size: var( --size-small-3);
   line-height: var (--line-height-paragraph);
 }
