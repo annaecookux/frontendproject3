@@ -381,7 +381,37 @@ s::after {
   text-decoration: underline;
   color: var(--text-color-50);
 }
+/* Footer */
 
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  border-top: solid;
+  border-width: .12rem;
+  border-color: #687176;
+  padding: 1rem 0 1rem 0;
+} 
+
+footer ul {
+list-style: none;
+text-align: center;
+}
+
+footer ul li {
+display: inline-block;
+justify-content: center;
+}
+
+footer li {
+display: inline;
+}
+
+footer > ul > li > a {
+display: block;
+line-height: 2em;
+padding: .5rem 2.25rem;
+text-decoration: none;
+}
 /* Posts list */
 .postlist {
   list-style: none;
