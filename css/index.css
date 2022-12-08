@@ -26,35 +26,30 @@
   --color-yellow-20: #FFEFB7;
   
   /* Theme scale */
-  --size-extra-large-2: 5em; /* 80px*/
-  --size-extra-large-1: 4.5em; /* 72px*/
+  --size-extra-large-2: 5em; /* 80px 500% */
+  --size-extra-large-1: 4.5em; /* 72px 450% */
 
-  --size-large-3: 4em; /* 64px*/
-  --size-large-2: 3.75em; /* 60px*/
-  --size-large-1: 3em; /* 48px*/
+  --size-large-3: 4em; /* 64px 400% */
+  --size-large-2: 3.75em; /* 60px 375% */
+  --size-large-1: 3em; /* 48px 300% */
 
-  --size-medium-3: 2.75em; /* 44px*/
-  --size-medium-2: 2.5em; /* 40px*/
-  --size-medium-1: 2.25em; /* 36px*/
+  --size-medium-3: 2.75em; /* 44px 275% */
+  --size-medium-2: 2.5em; /* 40px 250% */
+  --size-medium-1: 2.25em; /* 36px 225% */
 
-  --size-small-3: 1.5em; /* 24px*/
-  --size-small-2: 1.25em; /* 20px*/
-  --size-small-1: 1.125em; /* 18px*/
+  --size-small-3: 1.5em; /* 24px 150% */
+  --size-small-2: 1.25em; /* 20px 125% */
+  --size-small-1: 1.125em; /* 18px 112.5% */
 
-  --size-extra-small-3: 1em; /* 16px*/
-  --size-extra-small-2: .0.875em; /* 14px*/
-  --size-extra-small-1: .75em; /* 12px*/
+  --size-extra-small-3: 1em; /* 16px 100% */
+  --size-extra-small-2: .0.875em; /* 14px 87.5% */
+  --size-extra-small-1: .75em; /* 12px 75% */
   
 
  /* Theme type */
     --type-serif: Recoleta;
     --type-sans-serif: SofiaProRegular;
-    --type-sans-serif-bold: SofiaProRegularItalic;
-    --type-sans-serif-italic: SofiaProRegularBold;
-
-    --line-height-heading-large: 125%;
-    --line-height-heading: 135%;
-    --line-height-paragraph: 166%;
+    --type-sans-serif-italic: SofiaProRegularItalic;
 
   /* Theme states */
   --background-color: var(--color-pink-20);
@@ -183,41 +178,41 @@ h1 {
   font-family: var(--type-serif);
   font-weight: 400;
   font-size: var(--size-extra-large-1);
-  line-height: var (--line-height-heading-large);
+  line-height: var (  --size-small-2);
 }
 
 h2 {
   font-weight: 400;
   font-size: var(--size-medium-2);
-  line-height: var (--line-height-heading);
+  line-height: var (--size-small-2);
 }
 
 h3 {
   font-weight: 600;
   font-size: var(--size-small-2);
-  line-height: var (--line-height-heading);
+  line-height: var (--size-small-2);
   text-transform: uppercase;
   letter-spacing: 0.15em;
 }
 
 h4 {
   font-size: var(--size-small-2);
-  line-height: var (--line-height-heading);
+  line-height: var (--size-small-2);
 }
 
 h5 {
   font-size: var(--size-extra-small-3);
-  line-height: var (--line-height-heading);
+  line-height: var (--size-small-2);
 }
 
 p {
   font-size: var(--size-small-1);
-  line-height: var (--line-height-paragraph);
+  line-height: var (  --size-small-3);
 }
 
 button {
   font-size: var (--size-extra-small-3);
-  line-height: var (--line-height-heading-large);
+  line-height: var (  --size-small-2);
   color: var(--button-text-color);
   font-weight: 600;
   letter-spacing: 0.2em;
@@ -264,6 +259,7 @@ header:after {
 table {
   margin: 1em 0;
 }
+
 table td,
 table th {
   padding-right: 1em;
@@ -272,7 +268,7 @@ table th {
 pre,
 code {
   font-family: var(--font-family-monospace);
-  line-height: 1.5;
+  line-height: var(--size-small-3);
 }
 pre {
   font-size: var(--size-extra-small-2);
@@ -294,15 +290,11 @@ pre {
 }
 
 b {
-  font-family: SofiaProSemiBold;
+  font-weight: 600;
 }
 
 i {
-  font-family: SofiaProRegularItalic;
-}
-
-b + i {
-  font-family: SofiaProSemiBoldItalic;
+  font-family: var (--type-sans-serif-italic);
 }
 
 code {
@@ -319,7 +311,7 @@ img {
 }
 p,
 .tmpl-post li {
-  line-height: 1.45;
+  line-height: var (--size-small-3);
 }
 
 /* strikethrough screenreader accessibility */
@@ -344,7 +336,6 @@ s::after {
 
 /* Header */
 .home {
-  font-family: SofiaProRegular;
   font-size: var(--size-small-1);
 }
 
@@ -366,7 +357,7 @@ s::after {
 .nav-item a[href] {
   text-decoration: none;
   font-size: var(--size-small-1);
-  line-height: 166%;
+  line-height: var(--size-small-3);
   color: var(--text-color-20);
 }
 
@@ -402,7 +393,6 @@ s::after {
 }
 
 .postlist-date {
-  font-family: SofiaProRegular;
   font-size: var(--size-extra-small-3);
   line-height: 166%;
   color: var(--text-color-20);
@@ -421,13 +411,12 @@ s::after {
   font-weight: bold;
 }
 .tmpl-home .postlist-link {
-  font-family: SofiaProRegular;
   font-size: 1.5em;
 }
 
 /* Tags */
 .post-tag {
-  font-family: SofiaProSemiBold;
+  font-weight: 600;
   font-size: 0.75em; /* 12px /16 */
   display: inline-flex;
   align-items: center;
@@ -552,10 +541,10 @@ a[href].direct-link:focus:visited,
 .button-link-primary {
   color: var(--button-text-color);
   background-color: var(--primary-button-rest);
-  text-decoration: none;
   font-size: var(--size-extra-small-3);
+  line-height: var (--size-small-2);
+  text-decoration: none;
   font-weight: 600;
-  line-height: 125%;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   border-radius: 1.75em;
@@ -581,10 +570,10 @@ a[href].direct-link:focus:visited,
 .button-link-secondary {
   color: var(--button-text-color);
   background-color: var(--secondary-button-rest);
-  text-decoration: none;
   font-size: var(--size-extra-small-3);
+  line-height: var (--size-small-2);
+  text-decoration: none;
   font-weight: 600;
-  line-height: 125%;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   border-radius: 1.75em;
@@ -612,7 +601,7 @@ a[href].direct-link:focus:visited,
 .h3-sentence-case {
   font-weight: 600;
   font-size: var(--size-small-2);
-  line-height: var (--line-height-heading);
+  line-height: var (--size-small-2);
   text-transform: none;
   letter-spacing: 0em;
 }
@@ -620,5 +609,5 @@ a[href].direct-link:focus:visited,
 /* Large paragraph */
 .p-large {
   font-size: var(--size-small-3);
-  line-height: var (--line-height-paragraph);
+  line-height: var (--size-small-3);
 }
