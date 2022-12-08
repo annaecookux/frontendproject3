@@ -53,7 +53,7 @@
 
     --line-height-heading-large: 125%;
     --line-height-heading: 135%;
-    --line-height-body: 166%;
+    --line-height-paragraph: 166%;
 
   /* Theme states */
   --background-color: var(--color-pink-20);
@@ -173,7 +173,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  font-family: Recoleta;
+  font-family: var(--type-serif);
   font-weight: 400;
   font-size: var(--size-extra-large-1);
   line-height: var (--line-height-heading-large);
@@ -182,30 +182,30 @@ h1 {
 h2 {
   font-weight: 400;
   font-size: var(--size-medium-2);
-  line-height: var (--line-height-heading-large);
+  line-height: var (--line-height-heading);
 }
 
 h3 {
-  font-size: 1.25rem;
-  line-height: 135%;
+  font-weight: 600;
+  font-size: var(--size-small-2);
+  line-height: var (--line-height-heading);
   text-transform: uppercase;
   letter-spacing: 0.15em;
 }
 
 h4 {
-  font-size: 1.25rem;
-  line-height: 135%;
+  font-size: var(--size-small-2);
+  line-height: var (--line-height-heading);
 }
 
 h5 {
-  font-size: 1rem;
-  line-height: 135%;
+  font-size: var(--size-extra-small-2);
+  line-height: var (--line-height-heading);
 }
 
 p {
-  font-family: SofiaProRegular;
-  font-size: 1.125rem;
-  line-height: 166%;
+  font-size: var(--size-small-1);
+  line-height: var (--line-height-paragraph);
 }
 
 button {
@@ -607,16 +607,15 @@ a[href].direct-link:focus:visited,
 
 /* Sentence case H3 */
 .h3-sentence-case {
-  font-family: SofiaProSemiBold;
-  font-size: 1.25rem;
-  line-height: 135%;
+  font-weight: 600;
+  font-size: var(--size-small-2);
+  line-height: var (--line-height-heading);
   text-transform: none;
   letter-spacing: 0em;
 }
 
 /* Large paragraph */
-.paragraph-large {
-  font-family: SofiaProRegular;
-  font-size: 1.5rem;
-  line-height: 166%;
+.p-large {
+  font-size: var(--size-small-3);
+  line-height: var (--line-height-paragraph);
 }
