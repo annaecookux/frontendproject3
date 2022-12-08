@@ -210,7 +210,7 @@ h5 {
 
 p {
   font-size: var(--size-small-1);
-  line-height: var (  --size-small-3);
+  line-height: 166%
 }
 
 button {
@@ -648,7 +648,7 @@ a[href].direct-link:focus:visited,
 /* Large paragraph */
 .p-large {
   font-size: var(--size-small-3);
-  line-height: var (--size-small-3);
+  line-height: 166%;
 }
 
 /* Fieldset */
