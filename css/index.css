@@ -51,7 +51,7 @@
     --type-sans-serif: SofiaProRegular;
     --type-sans-serif-italic: SofiaProRegularItalic;
 
-  /* Theme states */
+  /* Theme colors */
   --background-color: var(--color-pink-20);
 
   --deco-heading-color: var(--color-red-20);
@@ -75,6 +75,7 @@
 
   --focus-primary: var(--color-blue-20);
   --focus-secondary: var(--color-red-20);
+  --border-color: var (--color-pink-50);
 
 }
 
@@ -104,6 +105,8 @@
 
     --focus-primary: var(--color-yellow-90);
     --focus-secondary: var(--color-cyan-90);
+    --border-color: var (--color-cyan-90);
+
   }
 }
 
@@ -390,6 +393,12 @@ s::after {
   align-items: baseline;
   counter-incement: start-from -1;
   line-height: 1.8;
+  padding: 2.25rem 0 2.25rem 0;
+  border-top: solid;
+  border-bottom: solid;
+  border-width: .12rem;
+  border-color: var (--border-color);
+  margin-top: -.06rem;
 }
 
 .postlist-date {
