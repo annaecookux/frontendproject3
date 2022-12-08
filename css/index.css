@@ -295,10 +295,8 @@ p,
 
 /* Header */
 .home {
-  width: 2.75rem;
-  height: 2.75rem;
-  height: auto;
-  margin-bottom: -1.5rem;
+  font-family: SofiaProRegular;
+  font-size: 1.125rem;
 }
 
 .home :link:not(:hover) {
@@ -518,4 +516,3 @@ a[href].direct-link:focus:visited,
   font-size: 1.5rem;
   line-height: 166%;
 }
-
