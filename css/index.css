@@ -520,6 +520,45 @@ a[href].direct-link:focus:visited,
   background-color: var(--secondary-button-active);
 }
 
+/* Links that look like buttons */
+.button-link-primary {
+  background-color: var(--primary-button-rest);
+}
+
+.button-link-primary :hover {
+  background-color: var(--primary-button-hover-focus);
+}
+
+.button-link-primary :focus {
+  background-color: var(--primary-button-hover-focus);
+  outline-color: var(--focus-primary);
+  outline: .125rem dashed;
+  outline-offset: .063rem;
+}
+
+.button-link-primary :active {
+  background-color: var(--primary-button-active);
+}
+
+.button-link-secondary {
+  background-color: var(--secondary-button-rest);
+}
+
+.button-link-secondary :hover {
+  background-color: var(--secondary-button-hover-focus);
+}
+
+.button-link-secondary :focus {
+  background-color: var(--secondary-button-hover-focus);
+  outline-color: var(--focus-primary);
+  outline: .125rem dashed;
+  outline-offset: .063rem;
+}
+
+.button-link-secondary :active {
+  background-color: var(--secondary-button-active);
+}
+
 
 /* Sentence case H3 */
 .sentenceCase {
@@ -531,7 +570,7 @@ a[href].direct-link:focus:visited,
 }
 
 /* Large paragraph */
-.large {
+.paragraph-large {
   font-family: SofiaProRegular;
   font-size: 1.5rem;
   line-height: 166%;

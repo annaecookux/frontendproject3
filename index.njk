@@ -1,9 +1,22 @@
 ---
+title: The Portfolio of Inclusive Designer Anna E. Cook 
 layout: layouts/home.njk
 ---
+
+<h1>Accessibility and inclusivity designer<h1>
+<p class="paragraph-large">Hi, I’m Anna! I am a digital product designer that focuses on building accessible, inclusive, and equitable experiences.</p>
+<a href="{{ '/nav/about/' | url }}" class="button-link-primary">About Me</a>.
+
+<h2>My Work</h2>
+<p class="paragraph-large">Work list will appear here</p>
+
+
 {% set maxPosts = collections.posts.length | min(3) %}
-<h3>Featured {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h1>
+<h2>Featured {% if maxPosts == 1 %}Post{% else %}{{ maxPosts }} Posts{% endif %}</h2>
 
 {% set postslist = collections.posts | head(-3) %}
 {% set postslistCounter = collections.posts | length %}
 {% include "postslist.njk" %}
+
+<h2>Upcoming Events</h2>
+<p class="paragraph-large">Events list will appear here</p>
